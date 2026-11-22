@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  margin: 0;
+}
+
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.mt-2 { margin-top: 0.5rem; }
+
+form {
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+}
+
+label,
+lable,
+legend {
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+}
+
+/* inputs + select */
+.outline {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  margin: 4px 0 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+.outline:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+/* checkbox rows */
+fieldset .flex {
+  gap: 10px;
+  margin: 12px 0;
+  align-items: flex-start;
+}
+fieldset p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #666;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin-top: 4px;
+  accent-color: #3b82f6;
+}
+
+/* save button */
+button {
+  background: #3b82f6;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+button:hover { background: #2563eb; }
